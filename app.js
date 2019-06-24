@@ -71,7 +71,7 @@ d3.csv("journalism_data.csv")
 
     // Add labels to each datapoint
 
-    svg.selectAll("text")
+    chartGroup.selectAll("text")
     .data(journalismData)
     .enter()
     .append("text")
