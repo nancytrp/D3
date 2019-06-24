@@ -76,7 +76,7 @@ d3.csv("journalism_data.csv")
     .enter()
     .append("text")
     .text(function(d) {
-      return d.state;
+      return d.abbr;
     })
 
 
