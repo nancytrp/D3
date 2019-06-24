@@ -24,7 +24,7 @@ var chartGroup = svg.append("g")
 d3.csv("journalism_data.csv")
   .then(function(journalismData) {
 
-    // Step 1: Parse Data/Cast as numbers
+    // Step 1: Parse Data/Cast as numbers in case they were not
     // ==============================
     journalismData.forEach(function(data) {
       
@@ -36,11 +36,11 @@ d3.csv("journalism_data.csv")
     // Step 2: Create scale functions
     // ==============================
     var xLinearScale = d3.scaleLinear()
-      .domain([20, d3.max(journalismData, d => d.income)])
+      .domain([35000, d3.max(journalismData, d => d.income)])
       .range([0, width]);
 
     var yLinearScale = d3.scaleLinear()
-      .domain([0, d3.max(journalismData, d => d.obesity)])
+      .domain([20, d3.max(journalismData, d => d.obesity)])
       .range([height, 0]);
 
     // Step 3: Create axis functions
