@@ -7,3 +7,6 @@ Visual Studio Code, HTML, JavaScript, D3
 ## Deployment
 A local server is required for visualization. For help check
 https://github.com/processing/p5.js/wiki/Local-server
+
+## Visualization
+![](D3scatter_plot.png)
